@@ -194,13 +194,14 @@ const translations = {
 
         "facts.education": "Education",
         "facts.level": "Level",
-        "facts.levelValue": "Second year · Common Core",
+        "facts.levelValue": "Third year · Software Engineering",
         "facts.address": "Address",
         "facts.interests": "Interests",
         "facts.interestsValue": "Development · Data · BI",
 
         "education.title": "Education",
         "education.current": "Current education",
+        "education.year3": "Third Year · Software Engineering",
         "education.year2": "Second year · Common Core",
         "education.year1": "First year · Common Core",
         "education.bac": "Baccalaureate D",
@@ -234,7 +235,7 @@ const translations = {
         "projects.internship": "Internship project",
         "projects.personal": "Personal project",
         "projects.captures": "View screenshots →",
-        "projects.website": "Visit website →",
+        "projects.website": "View screenshots and website →",
         "projects.capturesTitle": "Screenshots",
 
         "project.academic": "Academic project",
@@ -249,7 +250,7 @@ const translations = {
             "Restaurant Management Application",
 
         "project.restaurant.text":
-            "In-house restaurant management application built with HTML, CSS and JavaScript: stock management, customer order tracking, stock entries and exits, and basic statistics such as revenue and best-selling products.",
+            "In-house restaurant management application built with Java: stock management, customer order tracking, stock entries and exits, and basic statistics such as revenue and best-selling products.",
 
         "project.internship": "Internship project",
 
@@ -356,7 +357,7 @@ const cvBtn =
 ========================================================= */
 
 const CV_FR = "assets/CV_Norel_FR.pdf";
-const CV_EN = "assets/CV_Norel_Fiogbo_EN.pdf";
+const CV_EN = "assets/CV_Norel_EN.pdf";
 
 function setCvLink(url) {
 
