@@ -709,7 +709,7 @@ const projectData = {
             {
                  src: "assets/statistiques.png",
                 titleFr: "Les statistiques",
-                titleEn: "Stock "
+                titleEn: "the statistics "
             }
 
         ],
@@ -740,20 +740,20 @@ const projectData = {
 
             {
                 src: "assets/loginP.png",
-                titleFr: "Page d'acceuil",
+                titleFr: "Page de connexion",
                 titleEn: "Login page"
             },
 
             {
                 src: "assets/PagedeD.png",
                 titleFr: "Page d' identification",
-                titleEn: "Dashboard"
+                titleEn: "Identification page"
             },
 
             {
                 src: "assets/PageP.png",
                 titleFr: "Catalogue",
-                titleEn: "Stock "
+                titleEn: "catalog"
             },
 
              {
@@ -765,7 +765,7 @@ const projectData = {
              {
                 src: "assets/historiqueC.png",
                 titleFr: "Les historiques",
-                titleEn: "Stock "
+                titleEn: "the histories "
             }
 
         ],
