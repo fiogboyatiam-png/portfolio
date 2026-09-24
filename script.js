@@ -701,7 +701,7 @@ const projectData = {
             },
 
             {
-                 src: "assets/Tableaubord.png",
+                 src: "assets/tableaubord.png",
                 titleFr: "Tableau de bord",
                 titleEn: "Dashboard"
             },
