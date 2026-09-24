@@ -22,7 +22,7 @@ const translations = {
 
         "hero.eyebrow": "Bienvenue sur mon portfolio",
         "hero.hello": "Bonjour, je suis",
-        "hero.role": "Développeuse full-stack · Django & React",
+        "hero.role": "Développeuse ",
         "hero.available": "Disponible pour des missions freelance",
 
         "hero.text":
@@ -46,13 +46,14 @@ const translations = {
 
         "facts.education": "Formation",
         "facts.level": "Niveau",
-        "facts.levelValue": "Deuxième année · Tronc Commun",
+        "facts.levelValue": "Troisième année · Génie Logiciel",
         "facts.address": "Adresse",
         "facts.interests": "Intérêts",
         "facts.interestsValue": "Développement · Data · BI",
 
         "education.title": "Formation",
         "education.current": "Formation actuelle",
+        "education.year3": "Troisième année · Génie Logiciel",
         "education.year2": "Deuxième année · Tronc Commun",
         "education.year1": "Première année · Tronc Commun",
         "education.bac": "Baccalauréat D",
@@ -86,7 +87,7 @@ const translations = {
         "projects.internship": "Projet de stage",
         "projects.personal": "Projet personnel",
         "projects.captures": "Voir les captures →",
-        "projects.website": "Voir le site →",
+        "projects.website": "Voir les captures et le site →",
         "projects.capturesTitle": "Captures d’écran",
 
         "project.academic": "Projet académique",
@@ -101,7 +102,7 @@ const translations = {
             "Application de gestion de restauration",
 
         "project.restaurant.text":
-            "Application interne de gestion de restauration développée avec HTML, CSS et JavaScript : gestion du stock, suivi des commandes clients, entrées et sorties, et statistiques de base comme le chiffre d’affaires et les produits les plus vendus.",
+            "Application interne de gestion de restauration développée avec Java : gestion du stock, suivi des commandes clients, entrées et sorties, et statistiques de base comme le chiffre d’affaires et les produits les plus vendus.",
 
         "project.internship": "Projet de stage",
 
@@ -169,7 +170,7 @@ const translations = {
 
         "hero.eyebrow": "Welcome to my portfolio",
         "hero.hello": "Hello, I'm",
-        "hero.role": "Full-stack Developer · Django & React",
+        "hero.role": "Developer ",
         "hero.available": "Available for freelance work",
 
         "hero.text":
@@ -354,7 +355,7 @@ const cvBtn =
    Sans ce fichier, le CV français est proposé.
 ========================================================= */
 
-const CV_FR = "assets/CV_Norel_Fiogbo.pdf";
+const CV_FR = "assets/CV_Norel_FR.pdf";
 const CV_EN = "assets/CV_Norel_Fiogbo_EN.pdf";
 
 function setCvLink(url) {
@@ -693,21 +694,21 @@ const projectData = {
         images: [
 
             {
-                src: "assets/conges-dashboard.jpg",
+                 src: "assets/login.png",
+                titleFr: "Page d'acceuil",
+                titleEn: "Login page"
+            },
+
+            {
+                 src: "assets/Tableaubord.png",
                 titleFr: "Tableau de bord",
                 titleEn: "Dashboard"
             },
 
             {
-                src: "assets/conges-demande.jpg",
-                titleFr: "Demande de congé",
-                titleEn: "Leave request"
-            },
-
-            {
-                src: "assets/conges-historique.jpg",
-                titleFr: "Historique",
-                titleEn: "History"
+                 src: "assets/statistiques.png",
+                titleFr: "Les statistiques",
+                titleEn: "Stock "
             }
 
         ],
@@ -737,21 +738,33 @@ const projectData = {
         images: [
 
             {
-                src: "assets/stock-dashboard.jpg",
-                titleFr: "Tableau de bord",
+                src: "assets/loginP.png",
+                titleFr: "Page d'acceuil",
+                titleEn: "Login page"
+            },
+
+            {
+                src: "assets/PagedeD.png",
+                titleFr: "Page d' identification",
                 titleEn: "Dashboard"
             },
 
             {
-                src: "assets/stock-produits.jpg",
-                titleFr: "Produits",
-                titleEn: "Products"
+                src: "assets/PageP.png",
+                titleFr: "Catalogue",
+                titleEn: "Stock "
             },
 
-            {
-                src: "assets/stock-mouvements.jpg",
-                titleFr: "Mouvements de stock",
-                titleEn: "Stock movements"
+             {
+                src: "assets/Stock.png",
+                titleFr: "Page de stock",
+                titleEn: "Stock "
+            },
+
+             {
+                src: "assets/historiqueC.png",
+                titleFr: "Les historiques",
+                titleEn: "Stock "
             }
 
         ],
@@ -1013,7 +1026,7 @@ function openImageModal(
 
     {
         type: "image",
-        file: "assets/ma-photo.jpg",
+        file: "assets/photonono.jpg",
         titleFr: "Ma nouvelle photo",
         titleEn: "My new photo",
         descriptionFr: "Description de la photo.",
@@ -1034,9 +1047,10 @@ function openImageModal(
 
 
 const experienceMedia = [
+    
     {
         type: "image",
-        file: "assets/attestation-stage.jpg",
+        file: "assets/attestationsS.jpeg",
         titleFr: "Attestation de stage",
         titleEn: "Internship Certificate",
         descriptionFr:
@@ -1557,6 +1571,7 @@ document
         link.style.display = "none";
 
     });
+    
 
 
 /* =========================================================
