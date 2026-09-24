@@ -1,199 +1,1492 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Fiogbo Norel | Future Ingénieure Logiciel</title>
-  <meta
-    name="description"
-    content="Portfolio de Fiogbo Norel Yatiam Afi, étudiante en Génie Logiciel à l'IAI-TOGO."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfolio de Norel Fiogbo, étudiante en génie logiciel à IAI-Togo. Développement web full-stack (Django, React), projets et contact."
+    >
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2">
+    <link rel="shortcut icon" href="favicon.ico?v=2">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+
+    <link rel="canonical" href="https://portfolio-ashy-two-87.vercel.app/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Norel Fiogbo — Développeuse full-stack junior">
+    <meta
+        property="og:description"
+        content="Étudiante en génie logiciel à IAI-Togo — développement web full-stack (Django, React) et applications de gestion."
+    >
+    <meta property="og:image" content="https://portfolio-ashy-two-87.vercel.app/assets/photonono.jpg">
+    <meta property="og:url" content="https://portfolio-ashy-two-87.vercel.app/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Norel Fiogbo — Développeuse full-stack junior">
+    <meta
+        name="twitter:description"
+        content="Étudiante en génie logiciel à IAI-Togo — développement web full-stack (Django, React) et applications de gestion."
+    >
+    <meta name="twitter:image" content="https://portfolio-ashy-two-87.vercel.app/assets/photonono.jpg">
+
+    <title>Norel Fiogbo — Développeuse full-stack junior · Lomé, Togo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Vercel Web Analytics (à activer dans le tableau de bord Vercel) -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
+
 <body>
-  <header class="hero" id="accueil">
-    <nav class="nav">
-      <a href="#accueil" class="logo" aria-label="Accueil">FN</a>
-      <ul class="menu">
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#formation">Formation</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="themeButton" aria-label="Changer le thème">
-        <i class="fas fa-moon" aria-hidden="true"></i>
-      </button>
-    </nav>
 
-    <div class="hero-content reveal">
-      <p class="eyebrow">Étudiante en Génie Logiciel - IAI-TOGO</p>
-      <h1>Fiogbo Norel Yatiam Afi</h1>
-      <p class="subtitle">
-        Passionnée par l'architecture logicielle, le développement d'applications robustes et les technologies Cloud. Spécialisée en écosystème .NET et Python.
-      </p>
-      <div class="hero-actions">
-        <a class="btn" href="#projets"><i class="fas fa-code"></i> Explorer mes projets</a>
-        <a class="btn ghost" href="#contact"><i class="fas fa-paper-plane"></i> Me contacter</a>
-      </div>
-      <div class="highlights">
-        <span><i class="fas fa-graduation-cap"></i> Licence 2 Génie Logiciel</span>
-        <span><i class="fas fa-search"></i> Recherche de stage (2 mois)</span>
-        <span><i class="fas fa-map-marker-alt"></i> Lomé, Togo</span>
-      </div>
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="#accueil" class="logo logo-code" aria-label="Norya, accueil">
+                <i>&lt;</i>Norya<i>/&gt;</i>
+            </a>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="#accueil" data-i18n="nav.home">
+                    Accueil
+                </a>
+
+                <a href="#apropos" data-i18n="nav.about">
+                    À propos
+                </a>
+
+                <a href="#formation" data-i18n="nav.education">
+                    Formation
+                </a>
+
+                <a href="#competences" data-i18n="nav.skills">
+                    Compétences
+                </a>
+
+                <a href="#projets" data-i18n="nav.projects">
+                    Projets
+                </a>
+
+                <a href="#parcours" data-i18n="nav.experience">
+                    Expérience
+                </a>
+
+                <a href="#certifications" data-i18n="nav.certifications">
+                    Certifications
+                </a>
+
+                <a href="#contact" data-i18n="nav.contact">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-button touch-effect"
+                    id="languageBtn"
+                    type="button"
+                    aria-label="Passer en anglais"
+                >
+                    <span id="languageIcon">EN</span>
+                </button>
+
+                <button
+                    class="icon-button touch-effect"
+                    id="themeBtn"
+                    type="button"
+                    aria-label="Activer le mode sombre"
+                >
+                    <span id="themeIcon">☾</span>
+                </button>
+
+                <button
+                    class="menu-button"
+                    id="menuBtn"
+                    type="button"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             ACCUEIL
+        ========================== -->
+
+        <section class="hero" id="accueil">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow" data-i18n="hero.eyebrow">
+                        Bienvenue sur mon portfolio
+                    </p>
+
+                    <h1>
+                        <span data-i18n="hero.hello">
+                            Bonjour, je suis
+                        </span>
+                        <strong>Norel</strong>
+                    </h1>
+
+                    <h2 data-i18n="hero.role">
+                        Développeuse full-stack · Django &amp; React
+                    </h2>
+
+                    <p class="hero-text" data-i18n="hero.text">
+                        Je suis étudiante en deuxième année à IAI-Togo et passionnée
+                        par le développement de logiciels, d'applications web et de sites web.
+                    </p>
+
+                    <p class="availability">
+                        <span class="availability-dot"></span>
+                        <span data-i18n="hero.available">
+                            Disponible pour des missions freelance
+                        </span>
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projets"
+                            class="button primary touch-effect"
+                            data-i18n="hero.projects"
+                        >
+                            Découvrir mes projets
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="button secondary touch-effect"
+                            data-i18n="hero.contact"
+                        >
+                            Me contacter
+                        </a>
+
+                        <a
+                            id="cvBtn"
+                            href="assets/CV_Norel_Fiogbo.pdf"
+                            class="button secondary touch-effect"
+                            data-i18n="hero.cv"
+                            download="CV_Norel_Fiogbo.pdf"
+                        >
+                            Télécharger mon CV
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-photo-wrapper">
+
+                    <div class="hero-photo-decoration"></div>
+
+                    <div class="hero-photo-card">
+
+                        <img
+                            src="assets/photonono.jpg"
+                            alt="Photo de Norel"
+                            class="hero-photo"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+
+                        <div class="student-badge">
+                            <span class="badge-dot"></span>
+                            <span data-i18n="hero.student">
+                                Étudiante
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             À PROPOS
+        ========================== -->
+
+        <section class="section" id="apropos">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        À PROPOS
+                    </p>
+
+                    <h2 data-i18n="about.title">
+                        À propos de moi
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-main">
+
+                        <p
+                            class="about-intro"
+                            data-i18n="about.intro"
+                        >
+                            Je suis une étudiante en informatique curieuse,
+                            sérieuse et passionnée par la création de solutions numériques.
+                        </p>
+
+                        <p data-i18n="about.text">
+                            Ma formation à IAI-Togo me permet de découvrir plusieurs
+                            domaines de l'informatique, notamment la programmation,
+                            les bases de données, les réseaux et le développement web.
+                        </p>
+
+                        <p data-i18n="about.text2">
+                            J'aime apprendre en réalisant des projets concrets et
+                            améliorer progressivement mes compétences à travers la pratique.
+                        </p>
+
+                    </div>
+
+
+                    <div class="facts-card">
+
+                        <div class="fact">
+
+                            <span class="fact-label" data-i18n="facts.education">
+                                Formation
+                            </span>
+
+                            <strong>IAI-Togo</strong>
+
+                        </div>
+
+                        <div class="fact">
+
+                            <span class="fact-label" data-i18n="facts.level">
+                                Niveau
+                            </span>
+
+                            <strong data-i18n="facts.levelValue">
+                                Deuxième année · Tronc Commun
+                            </strong>
+
+                        </div>
+
+                        <div class="fact">
+
+                            <span class="fact-label" data-i18n="facts.address">
+                                Adresse
+                            </span>
+
+                            <strong>Lomé, Togo</strong>
+
+                        </div>
+
+                        <div class="fact">
+
+                            <span class="fact-label" data-i18n="facts.interests">
+                                Intérêts
+                            </span>
+
+                            <strong data-i18n="facts.interestsValue">
+                                Développement · Data · BI
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FORMATION
+        ========================== -->
+
+        <section class="section section-soft" id="formation">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        PARCOURS ACADÉMIQUE
+                    </p>
+
+                    <h2 data-i18n="education.title">
+                        Formation
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2025 – 2026
+                            </span>
+
+                            <h3 data-i18n="education.current">
+                                Formation actuelle
+                            </h3>
+
+                            <p data-i18n="education.year2">
+                                Deuxième année · Tronc Commun
+                            </p>
+
+                            <span class="timeline-school">
+                                IAI-Togo
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2024 – 2025
+                            </span>
+
+                            <h3 data-i18n="education.year1">
+                                Première année · Tronc Commun
+                            </h3>
+
+                            <span class="timeline-school">
+                                IAI-Togo
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2024
+                            </span>
+
+                            <h3 data-i18n="education.bac">
+                                Baccalauréat D
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMPÉTENCES
+        ========================== -->
+
+        <section class="section" id="competences">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        SAVOIR-FAIRE
+                    </p>
+
+                    <h2 data-i18n="skills.title">
+                        Compétences
+                    </h2>
+
+                    <p data-i18n="skills.intro">
+                        Des compétences développées à travers ma formation
+                        et mes différents projets.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card touch-effect">
+
+                        <div class="skill-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3 data-i18n="skills.programming">
+                            Programmation
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card touch-effect">
+
+                        <div class="skill-icon">
+                            WEB
+                        </div>
+
+                        <h3 data-i18n="skills.web">
+                            Web
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card touch-effect">
+
+                        <div class="skill-icon">
+                            API
+                        </div>
+
+                        <h3 data-i18n="skills.backend">
+                            Backend
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>Django</span>
+                            <span>Django REST Framework</span>
+                            <span>REST API</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card touch-effect">
+
+                        <div class="skill-icon">
+                            DB
+                        </div>
+
+                        <h3 data-i18n="skills.database">
+                            Bases de données
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                            <span>Supabase</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card touch-effect">
+
+                        <div class="skill-icon">
+                            UML
+                        </div>
+
+                        <h3 data-i18n="skills.methodology">
+                            Méthodes & conception
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>UML</span>
+                            <span>Merise</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Draw.io</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card touch-effect">
+
+                        <div class="skill-icon">
+                            NET
+                        </div>
+
+                        <h3 data-i18n="skills.network">
+                            Réseaux
+                        </h3>
+
+                        <div class="skill-tags">
+
+                            <span>CCNA</span>
+                            <span>TCP/IP</span>
+                            <span>LAN</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="languages-box">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            COMMUNICATION
+                        </p>
+
+                        <h3 data-i18n="languages.title">
+                            Langues
+                        </h3>
+
+                    </div>
+
+                    <div class="language-list">
+
+                        <div class="language-item">
+                            <strong>Ewe</strong>
+                            <span data-i18n="languages.native">
+                                Langue maternelle
+                            </span>
+                        </div>
+
+                        <div class="language-item">
+                            <strong>Français</strong>
+                            <span data-i18n="languages.expert">
+                                Courant
+                            </span>
+                        </div>
+
+                        <div class="language-item">
+                            <strong>Anglais</strong>
+                            <span data-i18n="languages.elementary">
+                                Élémentaire
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJETS
+        ========================== -->
+
+        <section class="section section-soft" id="projets">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        RÉALISATIONS
+                    </p>
+
+                    <h2 data-i18n="projects.title">
+                        Mes projets
+                    </h2>
+
+                    <p data-i18n="projects.intro">
+                        Quelques projets réalisés pendant ma formation,
+                        mon stage et dans le cadre de projets personnels.
+                    </p>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <button
+                        type="button"
+                        class="filter active touch-effect"
+                        data-filter="all"
+                        data-i18n="projects.all"
+                    >
+                        Tous
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter touch-effect"
+                        data-filter="academic"
+                        data-i18n="projects.academic"
+                    >
+                        Projets académiques
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter touch-effect"
+                        data-filter="internship"
+                        data-i18n="projects.internship"
+                    >
+                        Projet de stage
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter touch-effect"
+                        data-filter="personal"
+                        data-i18n="projects.personal"
+                    >
+                        Projet personnel
+                    </button>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                                        <article
+                        class="project-card project-static"
+                        data-category="academic"
+                    >
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-tag" data-i18n="project.academic">
+                                Projet académique
+                            </span>
+
+                            <h3 data-i18n="project.clappia.title">
+                                Application mobile de facturation
+                            </h3>
+
+                            <p data-i18n="project.clappia.text">
+                                Application mobile de facturation conçue avec Clappia (no-code).
+                            </p>
+
+                            <span class="project-stack">Clappia · No-code</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="project-card project-static"
+                        data-category="academic"
+                    >
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-tag" data-i18n="project.academic">
+                                Projet académique
+                            </span>
+
+                            <h3 data-i18n="project.restaurant.title">
+                                Application de gestion de restauration
+                            </h3>
+
+                            <p data-i18n="project.restaurant.text">
+                                Application interne de gestion de restauration développée avec HTML, CSS et JavaScript.
+                            </p>
+
+                            <span class="project-stack">HTML · CSS · JavaScript</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="project-card project-featured touch-effect"
+                        data-category="internship"
+                        data-open-project="conges"
+                    >
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-tag" data-i18n="project.internship">
+                                Projet de stage
+                            </span>
+
+                            <h3 data-i18n="project.conges.title">
+                                Application de gestion des congés
+                            </h3>
+
+                            <p data-i18n="project.conges.text">
+                                Application web permettant aux employés de soumettre
+                                leurs demandes de congé et aux responsables de les traiter.
+                            </p>
+
+                            <span class="project-stack">Django · DRF · React · MySQL</span>
+
+                            <button
+                                type="button"
+                                class="project-action touch-effect"
+                                data-open-project="conges"
+                            >
+                                <span data-i18n="projects.captures">
+                                    Voir les captures →
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="project-card project-featured touch-effect"
+                        data-category="personal"
+                        data-open-project="stock"
+                    >
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <span class="project-tag" data-i18n="project.personal">
+                                Projet personnel
+                            </span>
+
+                            <h3>
+                                Consensus Bar Stock
+                            </h3>
+
+                            <p data-i18n="project.stock.text">
+                                Application de gestion de stock de boissons avec
+                                produits, mouvements, ventes et suivi du stock.
+                            </p>
+
+                            <span class="project-stack">React · Vite · Supabase</span>
+
+                            <button
+                                type="button"
+                                class="project-action touch-effect"
+                                data-open-project="stock"
+                            >
+                                <span data-i18n="projects.website">
+                                    Voir le site →
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPÉRIENCE
+        ========================== -->
+
+        <section class="section" id="parcours">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        PARCOURS PROFESSIONNEL
+                    </p>
+
+                    <h2 data-i18n="journey.title">
+                        Expérience
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-top">
+
+                        <div>
+
+                            <span class="experience-date">
+                                Juin – Août 2026
+                            </span>
+
+                            <h3>
+                                DYVOX7
+                            </h3>
+
+                        </div>
+
+                        <span class="experience-type">
+                            Stage académique
+                        </span>
+
+                    </div>
+
+
+                    <h4 data-i18n="journey.titleProject">
+                        Conception et mise en place d’une application web
+                        de gestion des congés du personnel
+                    </h4>
+
+
+                    <p data-i18n="journey.text">
+                        Stage académique de deux mois au sein de DYVOX7.
+                        Cette expérience m’a permis de découvrir le fonctionnement
+                        d’une entreprise, de mieux structurer mon travail et de
+                        participer à la réalisation d’un projet informatique concret.
+                    </p>
+
+
+                    <div class="experience-stack">
+
+                        <span>Django</span>
+                        <span>Django REST Framework</span>
+                        <span>React</span>
+                        <span>MySQL</span>
+                        <span>Git</span>
+
+                    </div>
+
+                </div>
+
+
+                <!--
+                    GALERIE EXPÉRIENCE
+
+                    Les photos et documents seront ajoutés automatiquement
+                    ici depuis le tableau experienceMedia du fichier script.js.
+                -->
+<div class="experience-media-section">
+    <div class="sub-heading">
+        <h3 data-i18n="experience.mediaTitle">
+            Attestation de stage
+        </h3>
+
+        <p data-i18n="experience.mediaIntro">
+            Photo de mon attestation de stage académique.
+        </p>
     </div>
-  </header>
 
-  <main>
-    <section class="section reveal" id="apropos">
-      <h2>À propos de moi</h2>
-      <p>
-        Actuellement en deuxième année de <strong>Génie Logiciel</strong> à l'Institut Africain d'Informatique (IAI-TOGO), je conçois des solutions logicielles allant des applications de bureau aux API RESTful complexes. Rigoureuse et curieuse, j'aime structurer des bases de données et déployer des environnements sécurisés. Je recherche un stage pratique de <strong>2 mois</strong> pour intégrer une équipe de développement, relever des défis techniques et apporter ma valeur ajoutée.
-      </p>
-    </section>
+    <div
+        class="experience-media-grid"
+        id="experienceMediaGrid"
+    ></div>
+</div>
 
-    <section class="section reveal" id="competences">
-      <h2>Compétences Techniques</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3>Langages & Frameworks</h3>
-          <div class="chips">
-            <span><i class="fab fa-windows"></i> C# / .NET</span>
-            <span><i class="fab fa-python"></i> Python (Flask)</span>
-            <span><i class="fab fa-java"></i> Java SE / Swing</span>
-            <span><i class="fab fa-php"></i> PHP</span>
-            <span><i class="fab fa-js"></i> JavaScript</span>
-          </div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CERTIFICATIONS
+        ========================== -->
+
+        <section
+            class="section section-soft"
+            id="certifications"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        FORMATIONS COMPLÉMENTAIRES
+                    </p>
+
+                    <h2 data-i18n="certifications.title">
+                        Certifications
+                    </h2>
+
+                    <p data-i18n="certifications.intro">
+                        Quelques certifications obtenues dans le domaine des réseaux.
+                    </p>
+
+                </div>
+
+
+                <div class="certifications-grid">
+
+                    <article
+                        class="certificate-card touch-effect"
+                        data-certificate="assets/ccna1.png"
+                        data-title-fr="CCNA 1"
+                        data-title-en="CCNA 1"
+                        data-description-fr="Certification portant sur les bases des réseaux informatiques."
+                        data-description-en="Certification covering networking fundamentals."
+                    >
+
+                        <div class="certificate-image-wrapper">
+
+                            <img
+                                src="assets/ccna1.png"
+                                alt="Certification CCNA 1"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <h3>
+                                CCNA 1
+                            </h3>
+
+                            <p data-i18n="certifications.click">
+                                Cliquez pour agrandir
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="certificate-card touch-effect"
+                        data-certificate="assets/ccna2.png"
+                        data-title-fr="CCNA 2"
+                        data-title-en="CCNA 2"
+                        data-description-fr="Certification portant sur les notions intermédiaires des réseaux."
+                        data-description-en="Certification covering intermediate networking concepts."
+                    >
+
+                        <div class="certificate-image-wrapper">
+
+                            <img
+                                src="assets/ccna2.png"
+                                alt="Certification CCNA 2"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <h3>
+                                CCNA 2
+                            </h3>
+
+                            <p data-i18n="certifications.click">
+                                Cliquez pour agrandir
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+
+                        <p
+                            class="eyebrow"
+                            data-i18n="contact.eyebrow"
+                        >
+                            Une idée, un projet ?
+                        </p>
+
+                        <h2 data-i18n="contact.heading">
+                            Parlons-en.
+                        </h2>
+
+                        <p data-i18n="contact.text">
+                            Vous pouvez me contacter pour échanger autour
+                            d’un projet, d’une collaboration ou simplement
+                            pour discuter informatique.
+                        </p>
+
+
+                        <div class="contact-details">
+
+                            <div class="contact-detail">
+
+                                <span class="contact-icon">
+                                    @
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        Email
+                                    </span>
+
+                                    <strong>
+                                        fiogboyatiam@gmail.com
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <a class="contact-detail contact-detail-link" href="tel:+22893184700">
+
+                                <span class="contact-icon">
+                                    ☎
+                                </span>
+
+                                <div>
+
+                                    <span data-i18n="contact.phone">
+                                        Téléphone
+                                    </span>
+
+                                    <strong>
+                                        +228 93 18 47 00
+                                    </strong>
+
+                                </div>
+
+                            </a>
+
+
+                            <div class="contact-detail">
+
+                                <span class="contact-icon">
+                                    📍
+                                </span>
+
+                                <div>
+
+                                    <span data-i18n="contact.address">
+                                        Adresse
+                                    </span>
+
+                                    <strong>
+                                        Lomé, Togo
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <a
+                                class="contact-detail contact-detail-link"
+                                href="https://www.linkedin.com/in/fiogbo-norel"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <span class="contact-icon">
+                                    in
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        LinkedIn
+                                    </span>
+
+                                    <strong>
+                                        linkedin.com/in/fiogbo-norel
+                                    </strong>
+
+                                </div>
+
+                            </a>
+
+
+                            <a
+                                class="contact-detail contact-detail-link"
+                                href="https://github.com/VOTRE_PSEUDO_GITHUB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <span class="contact-icon">
+                                    GH
+                                </span>
+
+                                <div>
+
+                                    <span>
+                                        GitHub
+                                    </span>
+
+                                    <strong>
+                                        github.com/VOTRE_PSEUDO_GITHUB
+                                    </strong>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        class="contact-form"
+                        id="contactForm"
+                        action="https://formspree.io/f/VOTRE_ID_FORMSPREE"
+                        method="POST"
+                    >
+
+                        <div class="form-group">
+
+                            <label for="name" data-i18n="form.name">
+                                Nom
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                data-placeholder-fr="Votre nom"
+                                data-placeholder-en="Your name"
+                                placeholder="Votre nom"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email" data-i18n="form.email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                data-placeholder-fr="Votre adresse email"
+                                data-placeholder-en="Your email address"
+                                placeholder="Votre adresse email"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject" data-i18n="form.subject">
+                                Sujet
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                required
+                                data-placeholder-fr="Sujet du message"
+                                data-placeholder-en="Message subject"
+                                placeholder="Sujet du message"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message" data-i18n="form.message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                data-placeholder-fr="Écrivez votre message..."
+                                data-placeholder-en="Write your message..."
+                                placeholder="Écrivez votre message..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="button primary touch-effect"
+                        >
+                            <span data-i18n="form.send">
+                                Envoyer le message
+                            </span>
+                        </button>
+
+                        <p
+                            class="form-message"
+                            id="formMessage"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         MODAL PROJET
+    ========================== -->
+
+    <div
+        class="modal"
+        id="projectModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" data-close-modal></div>
+
+<div class="modal-content">
+    <button
+        type="button"
+        class="modal-close"
+        data-close-modal="projectModal"
+        aria-label="Fermer"
+    >
+        ×
+    </button>
+
+    <span class="modal-tag" id="projectModalTag"></span>
+
+    <h2 id="projectModalTitle"></h2>
+
+    <p id="projectModalDescription"></p>
+
+    <!-- Captures visibles directement -->
+    <div class="project-captures-section">
+        <h3 data-i18n="projects.capturesTitle">
+            Captures d’écran
+        </h3>
+
+        <div
+            class="project-gallery"
+            id="projectGallery"
+        ></div>
+    </div>
+
+    <a
+        href="#"
+        class="button primary touch-effect modal-link"
+        id="projectModalLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        hidden
+    >
+        Voir le projet
+    </a>
+</div>
+
+    </div>
+
+
+    <!-- =========================
+         MODAL IMAGE
+    ========================== -->
+
+    <div
+        class="modal"
+        id="imageModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" data-close-modal></div>
+
+        <div class="modal-content image-modal-content">
+
+            <button
+                class="modal-close"
+                type="button"
+                data-close-modal
+                aria-label="Fermer"
+            >
+                ×
+            </button>
+
+            <img
+                id="expandedImage"
+                src=""
+                alt=""
+            >
+
+            <div class="image-modal-text">
+
+                <h2 id="imageTitle"></h2>
+
+                <p id="imageDescription"></p>
+
+            </div>
+
         </div>
-        
-        <div class="skill-category">
-          <h3>Bases de données & Cloud</h3>
-          <div class="chips">
-            <span><i class="fas fa-database"></i> MySQL</span>
-            <span><i class="fas fa-cloud"></i> OpenShift / Red Hat</span>
-            <span><i class="fas fa-layer-group"></i> Supabase / Vercel</span>
-            <span><i class="fas fa-project-diagram"></i> MERISE / UML</span>
-          </div>
+
+    </div>
+
+
+    <!-- =========================
+         MODAL CERTIFICATION
+    ========================== -->
+
+    <div
+        class="modal"
+        id="certificateModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" data-close-modal></div>
+
+        <div class="modal-content certificate-modal-content">
+
+            <button
+                class="modal-close"
+                type="button"
+                data-close-modal
+                aria-label="Fermer"
+            >
+                ×
+            </button>
+
+            <img
+                id="certificateImage"
+                src=""
+                alt=""
+            >
+
+            <div class="image-modal-text">
+
+                <h2 id="certificateTitle"></h2>
+
+                <p id="certificateDescription"></p>
+
+            </div>
+
         </div>
 
-        <div class="skill-category">
-          <h3>Outils & Certifications</h3>
-          <div class="chips">
-            <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
-            <span><i class="fas fa-network-wired"></i> Cisco CCNA-2</span>
-            <span><i class="fas fa-shield-alt"></i> Networking Essentials</span>
-            <span><i class="fas fa-users"></i> Méthodes Agiles</span>
-          </div>
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="currentYear"></span>
+                <span data-i18n="footer.text">
+                    Portfolio personnel · Informatique
+                </span>
+            </p>
+
+            <a href="#accueil">
+                ↑
+            </a>
+
         </div>
-      </div>
-    </section>
 
-    <section class="section reveal" id="formation">
-      <h2>Parcours Académique</h2>
-      <div class="project-grid">
-        <article class="project">
-          <p class="tag">2023 - 2024</p>
-          <h3>Baccalauréat Scientifique (Série D)</h3>
-          <p><strong>Lycée KOUVAHEY</strong></p>
-        </article>
+    </footer>
 
-        <article class="project">
-          <p class="tag">2024 - 2025</p>
-          <h3>Première année — Tronc Commun Informatique</h3>
-          <p><strong>IAI-TOGO</strong></p>
-          <p>
-            Algorithmique rigoureuse, bases du Langage C et Pascal, Programmation Orientée Objet (POO), Électronique numérique et Anglais technique.
-          </p>
-        </article>
 
-        <article class="project">
-          <p class="tag">2025 - 2026</p>
-          <h3>Deuxième année — Spécialité Génie Logiciel</h3>
-          <p><strong>IAI-TOGO (Institut Africain d'Informatique)</strong></p>
-          <p>
-            Approfondissement en architecture logicielle (C#, Java, Python), modélisation avancée (UML, MERISE), administration de bases de données, sécurité applicative, cloud computing (OpenShift) et gestion de projet Agile.
-          </p>
-        </article>
-      </div>
-    </section>
+    <!-- IMPORTANT : le fichier JavaScript est chargé ici -->
+    <script src="script.js"></script>
 
-    <section class="section reveal" id="projets">
-      <h2>Projets Clés</h2>
-      <div class="project-grid">
-        <article class="project">
-          <p class="tag">C# • MySQL • Architecture N-Tier</p>
-          <h3>Application de Gestion Commerciale</h3>
-          <p>
-            Conception et développement d'une application robuste de gestion des ventes et des stocks pour optimiser le suivi des flux opérationnels et financiers.
-          </p>
-        </article>
-
-        <article class="project">
-          <p class="tag">Python • Flask • Cryptography</p>
-          <h3>SecurPass</h3>
-          <p>
-            Création d'un gestionnaire de mots de passe sécurisé local. Intégration de modules de chiffrement de données pour garantir la confidentialité des identifiants utilisateurs.
-          </p>
-        </article>
-
-        <article class="project">
-          <p class="tag">C# • .NET • REST API</p>
-          <h3>API de Gestion de Club Cinéma & Bibliothèque</h3>
-          <p>
-            Développement d'API RESTful pour la gestion des réservations, des membres et des catalogues de médias. Structuration complète des endpoints et contrôle des accès.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal" id="langues">
-      <h2>Langues</h2>
-      <div class="chips">
-        <span><i class="fas fa-check-circle"></i> Français : Courant</span>
-        <span><i class="fas fa-comments"></i> Ewe : Langue maternelle</span>
-        <span><i class="fas fa-graduation-cap"></i> Anglais : Technique</span>
-      </div>
-    </section>
-
-    <section class="section reveal" id="contact">
-      <h2>Me Contacter & Réseaux</h2>
-      <p>Envie de collaborer ou de me proposer un stage ? Mes canaux sont ouverts :</p>
-      
-      <div class="contact-links">
-        <a href="mailto:fiogboyatiam@gmail.com" class="contact-card">
-          <i class="fas fa-envelope"></i>
-          <span>fiogboyatiam@gmail.com</span>
-        </a>
-        <a href="https://wa.me/22893184700" target="_blank" class="contact-card">
-          <i class="fab fa-whatsapp"></i>
-          <span>+228 93 18 47 00</span>
-        </a>
-        <a href="https://github.com/?locale=fr-fr" target="_blank" class="contact-card">
-          <i class="fab fa-github"></i>
-          <span>Mon profil GitHub</span>
-        </a>
-      </div>
-
-      <div style="margin-top: 30px;">
-        <a class="btn" href="./cv_norel.pdf" download><i class="fas fa-download"></i> Télécharger mon CV (PDF)</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> Fiogbo Norel - Tous droits réservés.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
