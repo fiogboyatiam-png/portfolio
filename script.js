@@ -1,11 +1,3 @@
-/* =========================================================
-   PORTFOLIO NOREL
-========================================================= */
-
-
-/* =========================================================
-   TRADUCTIONS
-========================================================= */
 
 const translations = {
 
@@ -26,7 +18,7 @@ const translations = {
         "hero.available": "Disponible pour des missions freelance",
 
         "hero.text":
-            "Je suis étudiante en deuxième année à IAI-Togo et passionnée par le développement de logiciels, d'applications web et de sites web.",
+            "Je suis étudiante en troisième année à IAI-Togo et passionnée par le développement de logiciels, d'applications web et de sites web.",
 
         "hero.projects": "Découvrir mes projets",
         "hero.contact": "Me contacter",
@@ -174,7 +166,7 @@ const translations = {
         "hero.available": "Available for freelance work",
 
         "hero.text":
-            "I am a second-year computer science student at IAI-Togo, passionate about software development, web applications and websites.",
+    "I am a third-year student at IAI-Togo and passionate about software development, web applications, and websites.",
 
         "hero.projects": "Discover my projects",
         "hero.contact": "Contact me",
