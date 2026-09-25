@@ -1,6 +1,4 @@
-/* =========================================================
-   VARIABLES
-========================================================= */
+
 
 :root {
     --bg: #f7f7fc;
@@ -1554,6 +1552,9 @@ a {
 }
 
 
+/* =========================================================
+   EFFET DE CLIC
+========================================================= */
 
 .touch-effect.clicked {
     animation: clickEffect 0.5s ease;
@@ -1656,6 +1657,10 @@ a {
     .hero-content {
         order: 2;
         text-align: center;
+    }
+
+    .hero h2 {
+        margin: 0 auto 22px;
     }
 
     .hero-photo-wrapper {
@@ -1845,22 +1850,4 @@ a {
 
     font-size: 1rem;
     text-align: left;
-}
-
-@media (min-width: 851px) and (max-width: 1100px) {
-    .hero h2 {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        white-space: normal;
-        overflow-wrap: normal;
-        word-break: normal;
-    }
-
-    .hero-grid {
-        gap: 30px;
-    }
-
-    .hero-content {
-        min-width: 0;
-    }
 }
